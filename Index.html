@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aprenda Música - Ebook e Aulas com Alisson Santos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hidden">
+        <h1>Aprenda Música com Alisson Santos</h1>
+        <p>Aperfeiçoe suas habilidades com canto, violão, guitarra e contrabaixo.</p>
+        <a href="#contato" class="btn">Entre em Contato</a>
+    </header>
+
+    <section id="ebook" class="hidden">
+        <h2>Ebook Exclusivo</h2>
+        <p>Aprenda tudo sobre canto, violão, guitarra e contrabaixo com o nosso ebook completo!</p>
+
+        <!-- Área para o demonstrativo do ebook -->
+        <div class="ebook-demo">
+            <iframe
+                src="https://www.dropbox.com/scl/fi/fskks690ehzydf0xkrdnj/linguagens_codigos_em_br.pdf?rlkey=rk2nrhk3v3lzp8iih301w4wwq&st=04zu0yz4&dl=0"
+                width="100%" height="400px" title="Demonstração do Ebook"></iframe>
+        </div>
+
+        <button class="btn" onclick="comprarEbook()">Comprar Ebook</button>
+    </section>
+    <section id="aulas" class="hidden">
+        <h2>Aulas de Canto, Violão, Guitarra e Contrabaixo</h2>
+        <p>Oferecemos aulas personalizadas de acordo com seu nível de habilidade, seja iniciante ou avançado. Nossos
+            professores são especialistas e estão prontos para te ajudar a atingir seus objetivos musicais.</p>
+        <ul>
+            <li><strong>Canto:</strong> Técnica vocal e interpretação.</li>
+            <li><strong>Violão:</strong> Aulas do básico ao avançado.</li>
+            <li><strong>Guitarra:</strong> Solos, acordes e improvisação.</li>
+            <li><strong>Contrabaixo:</strong> Rítmica e técnica instrumental.</li>
+        </ul>
+        <a href="javascript:void(0);" class="btn btn-aula">Agende sua Aula</a>
+    </section>
+
+    <section id="professor" class="hidden">
+        <h2>Conheça Alisson Santos</h2>
+        <div class="bio-container">
+            <img src="img/alisson.TIFF" alt="Foto de Alisson Santos" class="bio-foto">
+            <div class="bio-texto">
+                <p>Alisson Santos é professor de música com mais de 15 anos de experiência. Especialista em canto,
+                    violão, guitarra e contrabaixo, Alisson é conhecido por sua abordagem dinâmica e personalizada,
+                    ajudando alunos de todas as idades a atingirem seus objetivos musicais. Sua paixão pela música e sua
+                    dedicação ao ensino o tornam um dos professores mais respeitados na área.</p>
+                <p>Alisson já formou diversos alunos que hoje se destacam no cenário musical. Com um método eficaz, ele
+                    proporciona aulas práticas e teóricas, garantindo que cada aluno se sinta confiante e motivado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="hidden">
+        <h2>Fale Conosco</h2>
+        <p>Quer mais informações? Entre em contato conosco!</p>
+        <form action="https://wa.me/558488770810" method="get" target="_blank">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer class="hidden">
+        <p>© 2024 - Aprenda Música com Alisson Santos. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Incluindo o JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
