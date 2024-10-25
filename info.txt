@@ -1,7 +1,0 @@
-Mude as cores para as cores da empresa que são:
-Preto #000000
-Cinza escuro #4A4A4A
-Branco #FFFFFF
-Amarelo #FEDD00
-Cinza claro #F6AA55
-O amarelo como cor principal.
