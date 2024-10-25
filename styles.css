@@ -66,6 +66,54 @@ section {
     background-color: #FFFFFF;
 }
 
+.ebook-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que os ebooks quebrem a linha */
+}
+
+.ebook {
+    min-width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ebook img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-height: 400px;
+    /* Ajuste esse valor para a altura desejada */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave para a transformação */
+}
+
+.ebook img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ebook h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ebook p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.ebook:hover img {
+    transform: scale(1.1);
+    /* Aumenta o tamanho da imagem ao passar o mouse */
+}
 
 section:hover {
     transform: translateY(-10px);

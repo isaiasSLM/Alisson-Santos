@@ -1,8 +1,23 @@
+// Funções para abrir o WhatsApp com a mensagem de interesse no ebook
+function comprarEbook1() {
+    const whatsappNumber = "558488770810";
+    const text = "Olá, tenho interesse em comprar o ebook1 de canto e instrumentos musicais.";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+}
 
-// Função para redirecionar para o WhatsApp com a mensagem de interesse no ebook
-function comprarEbook() {
-    const mensagem = "Gostaria de comprar o Ebook!";
-    window.open(`https://wa.me/558488770810?text=${encodeURIComponent(mensagem)}`, '_blank');
+function comprarEbook2() {
+    const whatsappNumber = "558488770810";
+    const text = "Olá, tenho interesse em comprar o ebook2 de canto e instrumentos musicais.";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+}
+
+function comprarEbook3() {
+    const whatsappNumber = "558488770810";
+    const text = "Olá, tenho interesse em comprar o ebook3 de canto e instrumentos musicais.";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
 }
 
 // Função para redirecionar para o WhatsApp com a mensagem de agendamento de aula
@@ -30,7 +45,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 });
 
 // Atribuindo os eventos de clique aos botões
-document.querySelector('.btn-ebook').addEventListener('click', comprarEbook);
+// document.querySelector('.btn-ebook').addEventListener('click', comprarEbook);
 document.querySelector('.btn-aula').addEventListener('click', agendarAula);
 
 // Função que aplica a classe "visible" aos elementos ao rolar a página
@@ -43,13 +58,6 @@ function handleScroll() {
             el.classList.add('visible');
         }
     });
-}
-
-function comprarEbook() {
-    const whatsappNumber = "558488770810";
-    const text = "Olá, tenho interesse em comprar o ebook de canto e instrumentos musicais.";
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
-    window.open(whatsappUrl, "_blank");
 }
 
 // Executa a função ao carregar a página e ao rolar
