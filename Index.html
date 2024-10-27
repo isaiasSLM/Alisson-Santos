@@ -11,6 +11,11 @@
 
 <body>
     <header>
+
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <h1>Alisson Santos</h1>
+        <p>|Realize seu sonho de tocar aquela bela música!</p>
+
         <h1>Aprenda Música com Alisson Santos</h1>
         <p>Aperfeiçoe suas habilidades com canto, violão, guitarra e contrabaixo.</p>
         <a href="#contato" class="btn">Entre em Contato</a>
@@ -20,26 +25,12 @@
         <h2>Nossos Ebooks</h2>
         <p>Aprenda tudo sobre canto, violão, guitarra e contrabaixo com nossos ebooks completos!</p>
 
-        <!-- Área para os ebooks -->
-        <div class="ebook-container">
-            <div class="ebook">
-                <img src="img/ebook1.png" alt="Capa do Ebook 1">
-                <h3>Título do Ebook 1</h3>
-                <p>Descrição do Ebook 1. Conteúdo detalhado sobre ...</p>
-                <button class="btn" onclick="comprarEbook1()">Comprar Ebook</button>
-            </div>
-            <div class="ebook">
-                <img src="img/ebook1.png" alt="Capa do Ebook 2">
-                <h3>Título do Ebook 2</h3>
-                <p>Descrição do Ebook 2. Conteúdo detalhado sobre ...</p>
-                <button class="btn" onclick="comprarEbook2()">Comprar Ebook</button>
-            </div>
-            <div class="ebook">
-                <img src="img/ebook1.png" alt="Capa do Ebook 3">
-                <h3>Título do Ebook 3</h3>
-                <p>Descrição do Ebook 3. Conteúdo detalhado sobre ...</p>
-                <button class="btn" onclick="comprarEbook3()">Comprar Ebook</button>
-            </div>
+        <!-- Área para o demonstrativo do ebook -->
+        <div class="ebook-demo">
+            <iframe
+                src="https://pay.cakto.com.br/5DjLy4c?fbclid=PAZXh0bgNhZW0CMTEAAabOgIZLA-Ljvk-A1TZXCar4JoqIgHkfiX0Ksuz1fnohuG7XgzhRHeP4d2U_aem_fRRC5nT0eJISADXNYb-Msw"
+                title="Ebook Pré-visualização"></iframe>
+            <button class="btn" onclick="comprarEbook()">Comprar Ebook</button>
         </div>
     </section>
 
@@ -53,7 +44,7 @@
             <li><strong>Guitarra:</strong> Solos, acordes e improvisação.</li>
             <li><strong>Contrabaixo:</strong> Rítmica e técnica instrumental.</li>
         </ul>
-        <a href="javascript:void(0);" class="btn btn-aula">Agende sua Aula</a>
+        <a href="javascript:void(0);" class="btn btn-aula" onclick="agendarAula()">Agende sua Aula</a>
     </section>
 
     <section id="professor">
@@ -61,16 +52,17 @@
         <div class="bio-container">
             <img src="img/alisson.jpg" alt="Foto de Alisson Santos" class="bio-foto">
             <div class="bio-texto">
-                <p>Alisson Santos é professor de música Com anos de dedicação à música, Alisson desenvolveu um método de
+                <p>Alisson Santos é professor de música. Com anos de dedicação à música, Alisson desenvolveu um método
+                    de
                     ensino único, que adapta o aprendizado às suas necessidades e objetivos, seja você um iniciante
                     curioso ou um músico experiente em busca de aprimoramento.</p>
-                <h1>Especializado:</h1>
+                <h3>Especializado:</h3>
                 <p><strong>Violão:</strong> Domine os acordes, técnicas de dedilhados e explore diversos estilos, do
                     clássico ao popular.</p>
 
-                <P> <strong>Guitarra:</strong> Aprimore sua técnica, explore ritmos e melodias, e domine estilos como
+                <p><strong>Guitarra:</strong> Aprimore sua técnica, explore ritmos e melodias, e domine estilos como
                     rock,
-                    pop, blues e jazz.</P>
+                    pop, blues e jazz.</p>
 
                 <p><strong>Contrabaixo:</strong> Aprenda os fundamentos do instrumento, domine a técnica de dedilhados e
                     explore a base
@@ -80,18 +72,24 @@
                     expresse-se com
                     confiança.</p>
 
-                <h1>O que você encontra nas aulas com Alisson:</h1>
-                <P><strong>Didática clara e acessível:</strong> Explicações detalhadas e exercícios práticos para um
-                    aprendizado sólido.</P>
-                <P><strong>Material didático diversificado:</strong> Abordagens inovadoras, recursos audiovisuais e
-                    exercícios criativos para aulas dinâmicas.</P>
-                <P><strong>Ambiente positivo e encorajador:</strong> Espaço acolhedor para você desenvolver sua
-                    musicalidade com confiança.</P>
-                <P><strong>Foco no desenvolvimento individual:</strong> Aulas personalizadas para alcançar o máximo do
-                    seu potencial.</P>
-
-
+                <h3>O que você encontra nas aulas com Alisson:</h3>
+                <p><strong>Didática clara e acessível:</strong> Explicações detalhadas e exercícios práticos para um
+                    aprendizado sólido.</p>
+                <p><strong>Material didático diversificado:</strong> Abordagens inovadoras, recursos audiovisuais e
+                    exercícios criativos para aulas dinâmicas.</p>
+                <p><strong>Ambiente positivo e encorajador:</strong> Espaço acolhedor para você desenvolver sua
+                    musicalidade com confiança.</p>
+                <p><strong>Foco no desenvolvimento individual:</strong> Aulas personalizadas para alcançar o máximo do
+                    seu potencial.</p>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="instagram" style="text-align: center; margin: 40px 0;">
+            <h2>Nos Siga no Instagram!</h2>
+            <img src="img/insta.jpeg" alt="Instagram" class="instagram-img">
+            <a href="https://www.instagram.com/alissonsantos_prof?igsh=bnM3M3h5eGhreWZr" class="btn">Siga-nos!</a>
         </div>
     </section>
 
@@ -111,6 +109,8 @@
 
     <footer>
         <p>© 2024 - Aprenda Música com Alisson Santos. Todos os direitos reservados.</p>
+        <a href="https://www.instagram.com/web_master16/profilecard/?igsh=MWtoZTE3NDhzYnppaw=="
+            target="_blank">Desenvolvido pela Web Master</a>
     </footer>
 
     <!-- Incluindo o JavaScript -->

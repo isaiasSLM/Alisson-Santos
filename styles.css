@@ -28,13 +28,34 @@ header {
     border-bottom-right-radius: 80px;
 }
 
+/* Estilo para a imagem do logotipo */
+header .logo {
+    width: 200px;
+    /* Largura do logo */
+    height: 200px;
+    /* Altura do logo */
+    border-radius: 50%;
+    /* Forma circular */
+    object-fit: fill;
+    /* Ajuste da imagem para preencher o círculo */
+    margin-bottom: 20px;
+    /* Espaço abaixo do logo */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao redor do logo */
+}
+
+
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgb(249, 246, 246);
+
 }
 
 header p {
     font-size: 18px;
+    text-shadow: 2px 2px 5px rgb(11, 11, 11);
+
 }
 
 section {
@@ -71,11 +92,12 @@ section {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    /* Permite que os ebooks quebrem a linha */
+    margin-top: 30px;
+    /* Adicionado para separar da seção anterior */
 }
 
 .ebook {
-    min-width: 250px;
+    min-width: 2500px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -91,13 +113,6 @@ section {
     /* Ajuste esse valor para a altura desejada */
     transition: transform 0.3s ease;
     /* Adiciona uma transição suave para a transformação */
-}
-
-.ebook img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 .ebook h3 {
@@ -141,8 +156,14 @@ h2:before {
 
 .bio-container {
     display: flex;
+    flex-direction: column;
+    /* Alinha a imagem e o texto em coluna */
     align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
     gap: 20px;
+    /* Espaço entre a imagem e o texto */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 .bio-foto {
@@ -154,12 +175,162 @@ h2:before {
 }
 
 .bio-texto {
+    font-size: 18px;
+    line-height: 1.8;
     flex: 1;
 }
 
 .bio-texto p {
     margin-bottom: 10px;
 }
+
+.bio-texto p strong {
+    font-size: 20px;
+
+}
+
+/* Estilos Gerais da Seção */
+#instagram {
+    background: linear-gradient(90deg, #F77737, #D62976, #8A3FFC);
+    /* Gradiente do Instagram */
+    padding: 40px 20px;
+    /* Espaçamento interno */
+    border-radius: 15px;
+    /* Cantos arredondados */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    text-align: center;
+    /* Centraliza texto */
+    margin: 30px 50px;
+    /* Espaçamento externo */
+}
+
+
+#instagram h2 {
+    font-size: 2rem;
+    /* Tamanho da fonte do título */
+    color: #000;
+    /* Cor do título */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
+}
+
+#instagram p {
+    font-size: 1.1rem;
+    /* Tamanho da fonte da descrição */
+    color: #4A4A4A;
+    /* Cor da descrição */
+    margin-bottom: 20px;
+    /* Espaço abaixo da descrição */
+}
+
+/* Estilos do Feed do Instagram */
+.instagram-feed {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem em múltiplas linhas */
+    justify-content: center;
+    /* Centraliza itens */
+    gap: 20px;
+    /* Espaçamento entre as postagens */
+}
+
+/* Estilos dos Itens do Instagram */
+.instagram-item {
+    text-align: center;
+    /* Centraliza o texto da descrição */
+    width: 100%;
+    max-width: 300px;
+    /* Largura máxima para as imagens */
+    transition: transform 0.3s ease;
+    /* Transição suave para o hover */
+}
+
+.instagram-item:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho ao passar o mouse */
+}
+
+.instagram-item img {
+    width: 100%;
+    /* Faz a imagem ocupar 100% da largura do contêiner */
+    border-radius: 15px;
+    /* Arredondar bordas da imagem */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+.instagram-description {
+    font-size: 0.9rem;
+    /* Tamanho da fonte da descrição */
+    color: #4A4A4A;
+    /* Cor do texto da descrição */
+    margin-top: 10px;
+    /* Espaço acima da descrição */
+    font-style: italic;
+    /* Estilo itálico para a descrição */
+}
+
+.btn-instagram {
+    display: block;
+    /* Faz o botão ocupar toda a largura disponível */
+    background-color: #4A4A4A;
+    /* Cor de fundo do botão */
+    color: #FEDD00;
+    /* Cor do texto do botão */
+    padding: 12px 25px;
+    /* Espaçamento interno */
+    border-radius: 25px;
+    /* Cantos arredondados */
+    font-weight: bold;
+    /* Negrito */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    margin: 20px auto;
+    /* Centraliza o botão horizontalmente */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efeitos de transição */
+    width: fit-content;
+    /* Ajusta a largura do botão ao conteúdo */
+}
+
+.btn-instagram:hover {
+    background-color: #FEDD00;
+    /* Cor de fundo ao passar o mouse */
+    color: #4A4A4A;
+    /* Cor do texto ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.instagram-img {
+    display: block;
+    /* Permite que a margem funcione corretamente */
+    margin: 20px auto;
+    /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
+    width: 100%;
+    /* Ajusta a largura da imagem para 100% do contêiner */
+    max-width: 300px;
+    /* Define uma largura máxima para a imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 30px;
+    /* Arredonda os cantos da imagem, se desejado */
+}
+
+
+
+
+.btn:hover {
+    background-color: #FEDD00;
+    /* Cor de fundo ao passar o mouse */
+    color: #4A4A4A;
+    /* Cor do texto ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+
 
 ul {
     list-style: none;
@@ -193,6 +364,8 @@ ul li:hover {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
+
+
 
 .btn:hover {
     background-color: #F6AA55;
@@ -242,4 +415,59 @@ form input:focus,
 form textarea:focus {
     border-color: #FEDD00;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px 0;
+    /* Espaçamento vertical */
+    background-color: #fedc00;
+    /* Cor de fundo do footer */
+    color: rgb(0, 0, 0);
+    /* Cor do texto */
+}
+
+footer p {
+    margin: 0;
+    /* Remove margens do parágrafo */
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
+
+.footer-link {
+    display: inline-block;
+    /* Trata o link como um bloco inline */
+    background: linear-gradient(135deg, #FEDD00, #F6AA55);
+    /* Gradiente de fundo */
+    color: #000000;
+    /* Cor do texto */
+    padding: 12px 25px;
+    /* Espaçamento interno */
+    border-radius: 25px;
+    /* Cantos arredondados */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-weight: bold;
+    /* Negrito */
+    margin-top: 10px;
+    /* Espaço acima do link */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Efeitos de transição */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.footer-link:hover {
+    background: linear-gradient(135deg, #F6AA55, #FEDD00);
+    /* Inverte as cores do gradiente ao passar o mouse */
+    transform: translateY(-3px);
+    /* Leve elevação ao passar o mouse */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra mais intensa */
+}
+
+.footer-link:active {
+    transform: translateY(1px);
+    /* Leve depressão ao clicar */
 }
