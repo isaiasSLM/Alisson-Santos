@@ -190,7 +190,7 @@ h2:before {
 }
 
 #depoimentos {
-    padding: 40px;
+    /* padding: ; */
     text-align: center;
     background-color: #FEDD00;
 }
@@ -213,7 +213,7 @@ h2:before {
     max-width: 250px;
     text-align: center;
     background: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -224,8 +224,8 @@ h2:before {
 }
 
 .depoimento img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
