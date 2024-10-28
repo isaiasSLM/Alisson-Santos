@@ -190,56 +190,71 @@ h2:before {
 }
 
 #depoimentos {
-    padding: px;
+    padding: 60px 20px;
     text-align: center;
     background-color: #FEDD00;
 }
 
 #depoimentos h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
 
+#depoimentos h3 {
+    font-size: 1.2em;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+    font-weight: normal;
 }
 
 .carousel {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     overflow: hidden;
 }
 
 .depoimento {
-    max-width: 150px;
+    max-width: 300px;
     text-align: center;
     background: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .depoimento:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .depoimento img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: 3px solid #F6AA55;
+    transition: transform 0.3s ease;
+}
+
+.depoimento:hover img {
+    transform: rotate(5deg);
 }
 
 .depoimento p {
     font-size: 1em;
     color: #555;
-    margin-bottom: 10px;
-
+    margin-bottom: 12px;
+    font-style: italic;
 }
 
 .depoimento span {
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: #777;
+    font-weight: bold;
 }
 
 
